@@ -1,13 +1,2514 @@
-body {
+* {
+  background-color: #020102;
+  font-size: 20px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:699px)
+{
+  .navbar {
+    padding: 35px;
+    width: 8%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top:0px;
+  }
+  .navbar .main-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:15px;
+  }
+  .navbar .other-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    height: 130px;
+    justify-content: space-between;
+  }
+  .navbar .other-icons :hover{
+    color: white;
+  }
+  .navbar .personals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:100px;
+    height: 120px;
+    justify-content: space-between;
+  
+  }
+  .navbar .personals a{
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .navbar .personals p{
+    color:rgb(120, 129, 136);
+    font-size: 20px;
+  }
+  .search .sch{
+    margin-left: 18%;
+    height:20px;
+    width: 55%;
+    border: solid white 0.32vw;
+    border-radius: 30px;
+    padding: 20px;
+    padding-left: 4.3%;
+    margin-top: 3%;
+    color: aliceblue;
+  }
+  .search .schbut{
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height:24px;
+    border: 4px white solid;
+    border-radius: 20px;
+    position:absolute;
+    top:9.5%;
+    left:20%;
+    cursor: pointer;
+  }
+  .firstrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    gap: 2.8%;
+    justify-content:space-between;
+    margin-left: 18%;
+    margin-top: 5.2vw;
+  }
+  .firstrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 20%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 1.5vw;
+  }
+  .secondrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 70%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 1.5vw;
+  }
+  .thirdrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 120%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 1.5vw;
+  }
+  .Chits{
+    /*background-image: url("img/chits.jpg");*/
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Chits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Thits{
+    /* background-image: url("img/thits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Thits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Ahits{
+    /* background-image: url("img/Ahits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  } 
+  .Ahits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Chits1{
+    /* background-image: url("img/chits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Chits1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Ahits1{
+    /* background-image: url("img/Ahits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Ahits1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .secondrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 18%;
+    margin-top: 5.2%;
+    gap: 2.8%;
+  }
+  .thirdrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 18%;
+    gap: 2.8%;
+    margin-top: 5.5%;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .chillHits{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#67a4ff,#67a4ff,#041a3a,black);
+    border-radius: 40px;
+  }
+  .chillHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .chillHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .chillHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .image{
+    position: relative;
+    background-image: url("img/chits_.jpg");
+    top:10px;
+    left:370px;
+    width:205px;
+    height:260px;
+  }
+  .topHits{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#7673fe,#7673fe,#19043a,black);
+    border-radius: 40px;
+  }
+  .topHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .topHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .topHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .image{
+    position: relative;
+    background-image: url("img/thits_.jpg");
+    top:10px;
+    left:370px;
+    width:205px;
+    height:260px;
+  }
+  .aHits{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#ffa135,#ffa135,#180e04,black);
+    border-radius: 40px;
+  }
+  .aHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .aHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .aHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .image{
+    position: relative;
+    background-image: url("img/Ahits_.jpg");
+    top:10px;
+    left:370px;
+    width:205px;
+    height:260px;
+  }
+  .sPlayer{
+    position:fixed;
+    width: 75%;
+    height: 80px;
+    top:82%;
+    left: 13%;
+    background-color: rgba(61, 60, 60, 0.219);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 0 0 80px rgb(0, 0, 0);
+  }
+  .sPlayer .image{
+    background-image: url("img/fococlipping-20220301-154545.png");
+    width:7vw;
+    height: 6.7vw;
+    background-color: transparent;
+    background-size: contain;
+    position:fixed;
+    bottom: 30%;
+    left:1%;
+    z-index: 2;
+  }
+  .sPlayer .names{
+    background-color: transparent;
+    position: relative;
+    top: 10px;
+    left: 130px;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+  }
+  .sPlayer .names .songName{
+    background-color: transparent;
+    font-size: 1.4vw;
+  }
+  .sPlayer .names .Artist{
+    background-color: transparent;
+    font-size: 1vw;
+  }
+  .sPlayer .icons{
+    width:75%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 23%;
+    bottom: 32%;
+  }
+  .sPlayer .icons .icon1{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon2{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon3{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon4{
+    background-color: transparent;
+    flex:3;
+    color:white;
+    font-size: 1.4vw;
+  }
+  .sPlayer .icons .icon5{
+    background-color: transparent;
+    flex:6;
+    height:5px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    right: 6%;
+  }
+  .sPlayer .icons .icon6{
+    background-color: transparent;
+    flex:3;
+    color:white;
+    font-size: 1.4vw;
+  }
+  .sPlayer .icons .icon7{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon8{
+    background-color: transparent;
+    flex:2;
+    height:5px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    right:1%;
+  }
+  .sPlayer .icons .icon9{
+    background-color: transparent;
+    flex:1;
+  }
+  .Favs{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right,#3f19aa,#7b9089,#180e04,black);
+    border-radius: 40px;
+  }
+  .Favs .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .Favs :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .Favs .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .image{
+    position: relative;
+    background-image: url("img/liked.png");
+    top:1.3%;
+    left:1.3%;
+    width:290px;
+    height:290px;
+    display: inline-block;
+  }
+  .Favs .titles{
+    color:white;
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+  }
+  .Favs .titles h1{
+    background-color: transparent;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 31%;
+    font-size:90px;
+  }
+  .Favs .titles p{
+    background-color: transparent;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 32%;
+  }
+  .Tops{
+    width: 1000px;
+    height: 2500px;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right,#9cf0e1,#9cf0e1,#180e04,black);
+    border-radius: 40px;
+  }
+  .Tops .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .Tops :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .Tops .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .image{
+    position: relative;
+    background-image: url("img/tops.png");
+    top:0.5%;
+    left:1.3%;
+    width:290px;
+    height:290px;
+    display: inline-block;
+  }
+  .Tops .titles{
+    color:rgb(255, 60, 167);
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+  }
+  .Tops .titles h1{
+    background-color: transparent;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 31%;
+    font-size:90px;
+  }
+  .Tops .titles p{
+    background-color: transparent;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 32%;
+  }
+  .SP{
+    border: 4px white solid;
+    width:700px;
+    height:700px;
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1300px)
+{
+  .navbar {
+    padding: 35px;
+    width: 8%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top:0px;
+  }
+  .navbar .main-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:15px;
+  }
+  .navbar .other-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    height: 130px;
+    justify-content: space-between;
+  }
+  .navbar .other-icons :hover{
+    color: white;
+  }
+  .navbar .personals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:100px;
+    height: 120px;
+    justify-content: space-between;
+  
+  }
+  .navbar .personals a{
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .navbar .personals p{
+    color:rgb(120, 129, 136);
+    font-size: 20px;
+  }
+  .search .sch{
+    margin-left: 18%;
+    height:20px;
+    width: 55%;
+    border: solid white 0.32vw;
+    border-radius: 30px;
+    padding: 20px;
+    padding-left: 4.3%;
+    margin-top: 3%;
+    color: aliceblue;
+  }
+  .search .schbut{
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height:24px;
+    border: 4px white solid;
+    border-radius: 12px;
+    position:absolute;
+    top:9.5%;
+    left:20%;
+    cursor: pointer;
+  }
+  .firstrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    gap: 2.8%;
+    justify-content:space-between;
+    margin-left: 18%;
+    margin-top: 5.2vw;
+  }
+  .firstrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 20%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 1.5vw;
+  }
+  .secondrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 70%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 1.5vw;
+  }
+  .thirdrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 120%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 1.5vw;
+  }
+  .Chits{
+    /*background-image: url("img/chits.jpg");*/
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Chits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Thits{
+    /* background-image: url("img/thits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Thits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Ahits{
+    /* background-image: url("img/Ahits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  } 
+  .Ahits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Chits1{
+    /* background-image: url("img/chits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Chits1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Ahits1{
+    /* background-image: url("img/Ahits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Ahits1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .secondrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 18%;
+    margin-top: 5.2%;
+    gap: 2.8%;
+  }
+  .thirdrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 18%;
+    gap: 2.8%;
+    margin-top: 5.5%;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .chillHits{
+    width: 75vw;
+    height: 1000px;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#67a4ff,#67a4ff,#041a3a,black);
+    border-radius: 40px;
+  }
+  .chillHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .chillHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .chillHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .image{
+    position: relative;
+    background-image: url("img/chits_.jpg");
+    top:10px;
+    left:38%;
+    width:205px;
+    height:260px;
+  }
+  .topHits{
+    width: 75vw;
+    height: 1000px;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#7673fe,#7673fe,#19043a,black);
+    border-radius: 40px;
+  }
+  .topHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .topHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .topHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .image{
+    position: relative;
+    background-image: url("img/thits_.jpg");
+    top:10px;
+    left:38%;
+    width:205px;
+    height:260px;
+  }
+  .aHits{
+    width: 75vw;
+    height: 1000px;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#ffa135,#ffa135,#180e04,black);
+    border-radius: 40px;
+  }
+  .aHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .aHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .aHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .image{
+    position: relative;
+    background-image: url("img/Ahits_.jpg");
+    top:10px;
+    left:38%;
+    width:205px;
+    height:260px;
+  }
+  .sPlayer{
+    position:fixed;
+    width: 75%;
+    height: 80px;
+    top:82%;
+    left: 13%;
+    background-color: rgba(61, 60, 60, 0.219);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 0 0 80px rgb(0, 0, 0);
+  }
+  .sPlayer .image{
+    background-image: url("img/fococlipping-20220301-154545.png");
+    width:92px;
+    height: 88px;
+    background-color:transparent;
+    background-size: contain;
+    position:fixed;
+    bottom: 30%;
+    left:1%;
+    z-index: 2;
+  }
+  .sPlayer .names{
+    background-color: transparent;
+    position: relative;
+    top: 10px;
+    left: 11%;
+    color: white;
+    font-weight: 400;
+  }
+  .sPlayer .names .songName{
+    background-color: transparent;
+    font-size: 1.4vw;
+  }
+  .sPlayer .names .Artist{
+    background-color: transparent;
+    font-size: 1vw;
+  }
+  .sPlayer .icons{
+    width:75%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 23%;
+    bottom: 32%;
+    font-size: 1vw;
+  }
+  .sPlayer .icons .icon1{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon2{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon3{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon4{
+    background-color: transparent;
+    flex:3;
+    color:white;
+    font-size: 1.4vw;
+  }
+  .sPlayer .icons .icon5{
+    background-color: transparent;
+    flex:6;
+    height:5px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    right: 6%;
+  }
+  .sPlayer .icons .icon6{
+    background-color: transparent;
+    flex:3;
+    color:white;
+    font-size: 1.4vw;
+  }
+  .sPlayer .icons .icon7{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon8{
+    background-color: transparent;
+    flex:2;
+    height:5px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    right:1%;
+  }
+  .sPlayer .icons .icon9{
+    background-color: transparent;
+    flex:1;
+  }
+  .Favs{
+    width: 75vw;
+    height: 1000px;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right,#3f19aa,#7b9089,#180e04,black);
+    border-radius: 40px;
+  }
+  .Favs .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .Favs :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .Favs .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .image{
+    position: relative;
+    background-image: url("img/liked.png");
+    top:1.3%;
+    left:1.3%;
+    width:18.9vw;
+    height:18.9vw;
+    display: inline-block;
+    background-size: contain;
+  }
+  .Favs .titles{
+    color:white;
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+  }
+  .Favs .titles h1{
+    background-color: transparent;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 31%;
+    font-size:5vw;
+  }
+  .Favs .titles p{
+    background-color: transparent;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 32%;
+  }
+  .Tops{
+    width: 75vw;
+    height: 2400px;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right,#9cf0e1,#9cf0e1,#180e04,black);
+    border-radius: 40px;
+  }
+  .Tops .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .Tops :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .Tops .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .image{
+    position: relative;
+    background-image: url("img/tops.png");
+    top:0.5%;
+    left:1.3%;
+    width:18.9vw;
+    height:18.9vw;
+    display: inline-block;
+    background-size: contain;
+  }
+  .Tops .titles{
+    color:rgb(255, 60, 167);
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+  }
+  .Tops .titles h1{
+    background-color: transparent;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 31%;
+    font-size:5vw;
+  }
+  .Tops .titles p{
+    background-color: transparent;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 32%;
+  }
+  .SP{
+    width:60.3vw;
+    height: max-content;
+    /* border: 4px white solid; */
+    border-radius: 25px;
+    position: absolute;
+    left:280px;
+    top:120px;
+    background-color: rgba(63, 62, 62, 0.425);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .SP .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: transparent;
+    /* backdrop-filter: blur(10px); */
+  }
+  .SP :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .SP .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .SP .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .SP .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1000px) and (max-width:1299px)
+{
+  .navbar {
+    padding: 35px;
+    width: 8%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top:0px;
+  }
+  .navbar .main-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:15px;
+  }
+  .navbar .other-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    height: 130px;
+    justify-content: space-between;
+  }
+  .navbar .other-icons :hover{
+    color: white;
+  }
+  .navbar .personals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:100px;
+    height: 120px;
+    justify-content: space-between;
+  
+  }
+  .navbar .personals a{
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .navbar .personals p{
+    color:rgb(120, 129, 136);
+    font-size: 20px;
+  }
+  .search .sch{
+    margin-left: 18%;
+    height:20px;
+    width: 55%;
+    border: solid white 0.32vw;
+    border-radius: 30px;
+    padding: 20px;
+    padding-left: 4.3%;
+    margin-top: 3%;
+    color: aliceblue;
+  }
+  .search .schbut{
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height:24px;
+    border: 4px white solid;
+    border-radius: 12px;
+    position:absolute;
+    top:9%;
+    left:19.5%;
+    cursor: pointer;
+  }
+  .firstrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    gap: 2.8%;
+    justify-content:space-between;
+    margin-left: 18%;
+    margin-top: 5.2vw;
+  }
+  .firstrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 20%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  .secondrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 73%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  .thirdrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 120%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  .Chits{
+    /*background-image: url("img/chits.jpg");*/
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Chits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Thits{
+    /* background-image: url("img/thits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Thits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Ahits{
+    /* background-image: url("img/Ahits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  } 
+  .Ahits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Chits1{
+    /* background-image: url("img/chits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Chits1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Ahits1{
+    /* background-image: url("img/Ahits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Ahits1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .secondrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 18%;
+    margin-top: 2.8%;
+    gap: 2.8%;
+  }
+  .thirdrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 18%;
+    gap: 2.8%;
+    margin-top: 4%;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .chillHits{
+    width: 80vw;
+    height: 1000px;
+    position: absolute;
+    left:15vw;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#67a4ff,#67a4ff,#041a3a,black);
+    border-radius: 40px;
+  }
+  .chillHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .chillHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .chillHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .image{
+    position: relative;
+    background-image: url("img/chits_.jpg");
+    top:10px;
+    left:38%;
+    width:205px;
+    height:260px;
+  }
+  .topHits{
+    width: 80vw;
+    height: 1000px;
+    position: absolute;
+    left:15vw;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#7673fe,#7673fe,#19043a,black);
+    border-radius: 40px;
+  }
+  .topHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .topHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .topHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .image{
+    position: relative;
+    background-image: url("img/thits_.jpg");
+    top:10px;
+    left:38%;
+    width:205px;
+    height:260px;
+  }
+  .aHits{
+    width: 80vw;
+    height: 1000px;
+    position: absolute;
+    left:15vw;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#ffa135,#ffa135,#180e04,black);
+    border-radius: 40px;
+  }
+  .aHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .aHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .aHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .image{
+    position: relative;
+    background-image: url("img/Ahits_.jpg");
+    top:10px;
+    left:38%;
+    width:205px;
+    height:260px;
+  }
+  .sPlayer{
+    position:fixed;
+    width: 75%;
+    height: 80px;
+    top:82%;
+    left: 13%;
+    background-color: rgba(61, 60, 60, 0.219);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 0 0 80px rgb(0, 0, 0);
+  }
+  .sPlayer .image{
+    background-image: url("img/fococlipping-20220301-154545.png");
+    width:82px;
+    height: 78px;
+    background-color: transparent;
+    background-size:contain ;
+    position:fixed;
+    bottom: 30%;
+    left:1%;
+    z-index: 2;
+  }
+  .sPlayer .names{
+    background-color: transparent;
+    position: relative;
+    top: 15px;
+    left: 12%;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+  }
+  .sPlayer .names .songName{
+    background-color: transparent;
+    font-size: 1.4vw;
+  }
+  .sPlayer .names .Artist{
+    background-color: transparent;
+    font-size: 1vw;
+  }
+  .sPlayer .icons{
+    width:75%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 23%;
+    bottom: 10px;
+  }
+  .sPlayer .icons .icon1{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon2{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon3{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon4{
+    background-color: transparent;
+    flex:3;
+    color:white;
+    font-size: 1.4vw;
+  }
+  .sPlayer .icons .icon5{
+    background-color: transparent;
+    flex:6;
+    height:5px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    right: 6%;
+  }
+  .sPlayer .icons .icon6{
+    background-color: transparent;
+    flex:3;
+    color:white;
+    font-size: 1.4vw;
+  }
+  .sPlayer .icons .icon7{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon8{
+    background-color: transparent;
+    flex:2;
+    height:5px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    right:1%;
+  }
+  .sPlayer .icons .icon9{
+    background-color: transparent;
+    flex:1;
+  }
+  .Favs{
+    width: 80vw;
+    height: 1000px;
+    position: absolute;
+    left:15vw;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right,#3f19aa,#7b9089,#180e04,black);
+    border-radius: 40px;
+  }
+  .Favs .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .Favs :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .Favs .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .image{
+    position: relative;
+    background-image: url("img/liked.png");
+    top:1.3%;
+    left:1.3%;
+    width:18.9vw;
+    height:18.9vw;
+    display: inline-block;
+    background-size: contain;
+  }
+  .Favs .titles{
+    color:white;
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+  }
+  .Favs .titles h1{
+    background-color: transparent;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 31%;
+    font-size:5vw;
+  }
+  .Favs .titles p{
+    background-color: transparent;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 32%;
+  }
+  .Tops{
+    width: 80vw;
+    height: 2400px;
+    position: absolute;
+    left:15vw;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right,#9cf0e1,#9cf0e1,#180e04,black);
+    border-radius: 40px;
+  }
+  .Tops .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .Tops :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .Tops .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .image{
+    position: relative;
+    background-image: url("img/tops.png");
+    top:0.5%;
+    left:1.3%;
+    width:18.9vw;
+    height:18.9vw;
+    display: inline-block;
+    background-size: contain;
+  }
+  .Tops .titles{
+    color:rgb(255, 60, 167);
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+  }
+  .Tops .titles h1{
+    background-color: transparent;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 31%;
+    font-size:5vw;
+  }
+  .Tops .titles p{
+    background-color: transparent;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 32%;
+  }
+  
+}
+
+
+
+
+
+
+@media only screen and (min-width:700px) and (max-width:999px)
+{
+  .navbar {
+    padding: 35px;
+    width: 8%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top:0px;
+  }
+  .navbar .main-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:15px;
+  }
+  .navbar .other-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    height: 130px;
+    justify-content: space-between;
+  }
+  .navbar .other-icons :hover{
+    color: white;
+  }
+  .navbar .personals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:100px;
+    height: 120px;
+    justify-content: space-between;
+  
+  }
+  .navbar .personals a{
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .navbar .personals p{
+    color:rgb(120, 129, 136);
+    font-size: 20px;
+  }
+  .search .sch{
+    margin-left: 18%;
+    height:20px;
+    width: 55%;
+    border: solid white 0.32vw;
+    border-radius: 30px;
+    padding: 20px;
+    padding-left: 4.3%;
+    margin-top: 3%;
+    color: aliceblue;
+  }
+  .search .schbut{
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height:24px;
+    border: 4px white solid;
+    border-radius: 12px;
+    position:absolute;
+    top:7%;
+    left:19%;
+    cursor: pointer;
+  }
+  .firstrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    gap: 2.8%;
+    justify-content:space-between;
+    margin-left: 18%;
+    margin-top: 2.8vw;
+  }
+  .firstrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 20%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  .secondrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 64%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  .thirdrow h1{
+    position: absolute;
+    color: aliceblue;
+    left:20%;
+    top: 108%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  .Chits{
+    /*background-image: url("img/chits.jpg");*/
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Chits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Thits{
+    /* background-image: url("img/thits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Thits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Ahits{
+    /* background-image: url("img/Ahits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  } 
+  .Ahits img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Chits1{
+    /* background-image: url("img/chits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Chits1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .Ahits1{
+    /* background-image: url("img/Ahits.jpg"); */
+    max-width:auto;
+    height:auto;
+    flex-shrink: 1;
+  }
+  .Ahits1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .secondrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 18%;
+    margin-top: 0vw;
+    gap: 2.8%;
+  }
+  .thirdrow{
+    height:280px;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 18%;
+    gap: 2.8%;
+    margin-top: 0%;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .chillHits{
+    width: 80vw;
+    height: 1000px;
+    position: absolute;
+    left:15vw;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#67a4ff,#67a4ff,#041a3a,black);
+    border-radius: 40px;
+  }
+  .chillHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .chillHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .chillHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chillHits .image{
+    position: relative;
+    background-image: url("img/chits_.jpg");
+    top:10px;
+    left:33%;
+    width:205px;
+    height:260px;
+  }
+  .topHits{
+    width: 80vw;
+    height: 1000px;
+    position: absolute;
+    left:15vw;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#7673fe,#7673fe,#19043a,black);
+    border-radius: 40px;
+  }
+  .topHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .topHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .topHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .topHits .image{
+    position: relative;
+    background-image: url("img/thits_.jpg");
+    top:10px;
+    left:33%;
+    width:205px;
+    height:260px;
+  }
+  .aHits{
+    width: 80vw;
+    height: 1000px;
+    position: absolute;
+    left:15vw;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,#ffa135,#ffa135,#180e04,black);
+    border-radius: 40px;
+  }
+  .aHits .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .aHits :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .aHits .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .aHits .image{
+    position: relative;
+    background-image: url("img/Ahits_.jpg");
+    top:10px;
+    left:33%;
+    width:205px;
+    height:260px;
+  }
+  .sPlayer{
+    position:fixed;
+    width: 75%;
+    height: 80px;
+    top:82%;
+    left: 13%;
+    background-color: rgba(61, 60, 60, 0.219);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 0 0 80px rgb(0, 0, 0);
+  }
+  .sPlayer .image{
+    background-image: url("img/fococlipping-20220301-154545.png");
+    width:7vw;
+    height: 6.7vw;
+    background-color: transparent;
+    background-size:contain ;
+    position:fixed;
+    bottom: 30%;
+    left:1%;
+    z-index: 2;
+  }
+  .sPlayer .names{
+    background-color: transparent;
+    position: relative;
+    top: 18px;
+    left: 12%;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+  }
+  .sPlayer .names .songName{
+    background-color: transparent;
+    font-size: 1.4vw;
+  }
+  .sPlayer .names .Artist{
+    background-color: transparent;
+    font-size: 1vw;
+  }
+  .sPlayer .icons{
+    width:75%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 23%;
+    bottom: 6px;
+  }
+  .sPlayer .icons .icon1{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon2{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon3{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon4{
+    background-color: transparent;
+    flex:3;
+    color:white;
+    font-size: 1.4vw;
+  }
+  .sPlayer .icons .icon5{
+    background-color: transparent;
+    flex:6;
+    height:5px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    right: 6%;
+  }
+  .sPlayer .icons .icon6{
+    background-color: transparent;
+    flex:3;
+    color:white;
+    font-size: 1.4vw;
+  }
+  .sPlayer .icons .icon7{
+    background-color: transparent;
+    flex:1;
+  }
+  .sPlayer .icons .icon8{
+    background-color: transparent;
+    flex:2;
+    height:5px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    right:1%;
+  }
+  .sPlayer .icons .icon9{
+    background-color: transparent;
+    flex:1;
+  }
+  .Favs{
+    width: 80vw;
+    height: 1000px;
+    position: absolute;
+    left:15vw;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right,#3f19aa,#7b9089,#180e04,black);
+    border-radius: 40px;
+  }
+  .Favs .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .Favs :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .Favs .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Favs .image{
+    position: relative;
+    background-image: url("img/liked.png");
+    top:1.3%;
+    left:1.3%;
+    width:18.9vw;
+    height:18.9vw;
+    display: inline-block;
+    background-size: contain;
+  }
+  .Favs .titles{
+    color:white;
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+  }
+  .Favs .titles h1{
+    background-color: transparent;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 31%;
+    font-size:5vw;
+  }
+  .Favs .titles p{
+    background-color: transparent;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 32%;
+  }
+  .Tops{
+    width: 80vw;
+    height: 2400px;
+    position: absolute;
+    left:15vw;
+    top:150px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right,#9cf0e1,#9cf0e1,#180e04,black);
+    border-radius: 40px;
+  }
+  .Tops .songpreview{
+    width: 100%;
+    height: 50px;
+    color:aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    border: 0px solid white;
+    border-bottom: 1px white solid;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+  }
+  .Tops :hover{
+    background-color: rgba(51, 49, 49, 0.8);
+  }
+  .Tops .songpreview h2{
+    flex: 6;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .songpreview p{
+    flex: 2;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .songpreview h6{
+    flex: 1;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .Tops .image{
+    position: relative;
+    background-image: url("img/tops.png");
+    top:0.5%;
+    left:1.3%;
+    width:18.9vw;
+    height:18.9vw;
+    display: inline-block;
+    background-size: contain;
+  }
+  .Tops .titles{
+    color:rgb(255, 60, 167);
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+  }
+  .Tops .titles h1{
+    background-color: transparent;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 31%;
+    font-size:5vw;
+  }
+  .Tops .titles p{
+    background-color: transparent;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 32%;
+  }
 }
