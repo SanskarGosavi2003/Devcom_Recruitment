@@ -1,0 +1,361 @@
+{
+  "songs": [
+    {
+      "title": "Something just like this",
+      "artist": "coldplay",
+      "id": 1
+    },
+    {
+      "title": "I GUESS I'M IN LOVE",
+      "artist": "clinton kane",
+      "id": 2
+    },
+    {
+      "title": "Run",
+      "artist": "Taylor Swift",
+      "id": 3
+    },
+    {
+      "title": "Driver's License",
+      "artist": "Olivia rodrigo",
+      "id": 4
+    },
+    {
+      "title": "First Times",
+      "artist": "Ed Sheeran",
+      "id": 5
+    },
+    {
+      "title": "Lovely",
+      "artist": "Billie Eilish",
+      "id": 6
+    },
+    {
+      "title": "I like me better",
+      "artist": "LAUV",
+      "id": 7
+    },
+    {
+      "title": "Mercy",
+      "artist": "Shawn Mendes",
+      "id": 8
+    },
+    {
+      "title": "Shape Of You",
+      "artist": "Ed Sheeran",
+      "id": 9
+    },
+    {
+      "title": "Lost Boy",
+      "artist": "ruth b",
+      "id": 10
+    },
+    {
+      "title": "Little do you know",
+      "artist": "Alex and sierra",
+      "id": 11
+    },
+    {
+      "title": "BAD HABITS",
+      "artist": "Ed Sheeran",
+      "id": 12
+    },
+    {
+      "title": "GOOD 4 U",
+      "artist": "Olivia Rodrigo",
+      "id": 13
+    },
+    {
+      "title": "Save your tears",
+      "artist": "Weeknd",
+      "id": 14
+    },
+    {
+      "title": "Stay",
+      "artist": "Kid Laroi",
+      "id": 15
+    },
+    {
+      "title": "Shivers",
+      "artist": "Ed Sheeran",
+      "id": 16
+    },
+    {
+      "title": "Perfect",
+      "artist": "Ed Sheeran",
+      "id": 17
+    },
+    {
+      "title": "Sorry",
+      "artist": "Justin bieber",
+      "id": 18
+    },
+    {
+      "title": "Photograph",
+      "artist": "ed Sheeran",
+      "id": 19
+    },
+    {
+      "title": "Little Things",
+      "artist": "One D",
+      "id": 20
+    },
+    {
+      "title": "Sugar",
+      "artist": "Maroon 5",
+      "id": 21
+    },
+    {
+      "title": "girls like you",
+      "artist": "Maroon 5",
+      "id": 22
+    },
+    {
+      "title": "See you again",
+      "artist": "Charlie Puth",
+      "id": 23
+    },
+    {
+      "title": "One call away",
+      "artist": "Charlie Puth",
+      "id": 24
+    },
+    {
+      "title": "this town",
+      "artist": "Niall Horan",
+      "id": 25
+    },
+    {
+      "title": "Sign of the Times",
+      "artist": "eros brother of thanos",
+      "id": 26
+    },
+    {
+      "title": "Starving",
+      "artist": "hawkeye's Daughter",
+      "id": 27
+    },
+    {
+      "title": "Attention",
+      "artist": "Charlie Puth",
+      "id": 28
+    },
+    {
+      "title": "What makes you beautiful",
+      "artist": "One D",
+      "id": 29
+    },
+    {
+      "title": "Best Song Ever",
+      "artist": "One D",
+      "id": 30
+    }
+  ],
+  "ChillSH": [
+    {
+      "title": "Something just like this",
+      "artist": "coldplay",
+      "id": 1
+    },
+    {
+      "title": "I GUESS I'M IN LOVE",
+      "artist": "clinton kane",
+      "id": 2
+    },
+    {
+      "title": "Run",
+      "artist": "Taylor Swift",
+      "id": 3
+    },
+    {
+      "title": "Driver's License",
+      "artist": "Olivia rodrigo",
+      "id": 4
+    },
+    {
+      "title": "First Times",
+      "artist": "Ed Sheeran",
+      "id": 5
+    },
+    {
+      "title": "Lovely",
+      "artist": "Billie Eilish",
+      "id": 6
+    },
+    {
+      "title": "I like me better",
+      "artist": "LAUV",
+      "id": 7
+    },
+    {
+      "title": "Mercy",
+      "artist": "Shawn Mendes",
+      "id": 8
+    },
+    {
+      "title": "Shape Of You",
+      "artist": "Ed Sheeran",
+      "id": 9
+    },
+    {
+      "title": "Lost Boy",
+      "artist": "ruth b",
+      "id": 10
+    }
+  ],
+  "ToPH": [
+    {
+      "title": "Little do you know",
+      "artist": "Alex and sierra",
+      "id": 1
+    },
+    {
+      "title": "BAD HABITS",
+      "artist": "Ed Sheeran",
+      "id": 2
+    },
+    {
+      "title": "GOOD 4 U",
+      "artist": "Olivia Rodrigo",
+      "id": 3
+    },
+    {
+      "title": "Save your tears",
+      "artist": "Weeknd",
+      "id": 4
+    },
+    {
+      "title": "Stay",
+      "artist": "Kid Laroi",
+      "id": 5
+    },
+    {
+      "title": "Shivers",
+      "artist": "Ed Sheeran",
+      "id": 6
+    },
+    {
+      "title": "Perfect",
+      "artist": "Ed Sheeran",
+      "id": 7
+    },
+    {
+      "title": "Sorry",
+      "artist": "Justin bieber",
+      "id": 8
+    },
+    {
+      "title": "Photograph",
+      "artist": "ed Sheeran",
+      "id": 9
+    },
+    {
+      "title": "Little Things",
+      "artist": "One D",
+      "id": 10
+    }
+  ],
+  "Accoustics": [
+    {
+      "title": "Sugar",
+      "artist": "Maroon 5",
+      "id": 1
+    },
+    {
+      "title": "girls like you",
+      "artist": "Maroon 5",
+      "id": 2
+    },
+    {
+      "title": "See you again",
+      "artist": "Charlie Puth",
+      "id": 3
+    },
+    {
+      "title": "One call away",
+      "artist": "Charlie Puth",
+      "id": 4
+    },
+    {
+      "title": "this town",
+      "artist": "Niall Horan",
+      "id": 5
+    },
+    {
+      "title": "Sign of the Times",
+      "artist": "eros brother of thanos",
+      "id": 6
+    },
+    {
+      "title": "Starving",
+      "artist": "hawkeye's Daughter",
+      "id": 7
+    },
+    {
+      "title": "Attention",
+      "artist": "Charlie Puth",
+      "id": 8
+    },
+    {
+      "title": "What makes you beautiful",
+      "artist": "One D",
+      "id": 9
+    },
+    {
+      "title": "Best Song Ever",
+      "artist": "One D",
+      "id": 10
+    }
+  ],
+  "Favourites":[
+    {
+      "title": "Favourite T-shirt",
+      "artist": "Jake Scott",
+      "id": 1
+    },
+    {
+      "title": "Falling like the stars",
+      "artist": "James Arthur",
+      "id": 2
+    },
+    {
+      "title": "What makes you beautiful",
+      "artist": "One D",
+      "id": 3
+    },
+    {
+      "title": "See you again",
+      "artist": "Charlie Puth",
+      "id": 4
+    },
+    {
+      "title": "cheating On You",
+      "artist": "Charlie puth",
+      "id": 5
+    },
+    {
+      "title": "night changes",
+      "artist": "One D",
+      "id": 6
+    },{
+      "title": "Dusk till dawn",
+      "artist": "Zayn",
+      "id": 7
+    },
+    {
+      "title": "Perfect",
+      "artist": "Ed sheeran",
+      "id": 8
+    },
+    {
+      "title": "Moves like jagger",
+      "artist": "MAroon 5",
+      "id": 9
+    },
+    {
+      "title":"Payphone",
+      "artist": "MAroon 5",
+      "id": 10
+    }
+  ]
+}
