@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-# Hey this Sanskar 
+## Hey this Sanskar 
 
 I have made a basic songplayer app using react js as my javascript framework
 
