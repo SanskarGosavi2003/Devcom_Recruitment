@@ -6,12 +6,12 @@ This is a recording of the website of how it looks on my laptop in case due to s
 
 https://drive.google.com/file/d/1zk1yzoYj1cgEepqjp_XegVRqNy_samkb/view?usp=sharing
 
-also to start the app before doing that create a new terminal and type:
+Also to start the app before doing that create a new terminal and type:
 
 npx json-server --watch data/songs.json --port 7000 
 
-this is to fetch data from the json file and then in the original terminal type npm run start 
+This is to fetch data from the json file and then in the original terminal type npm run start 
 
 npm run start
 
-this runs the app
+This runs the app
